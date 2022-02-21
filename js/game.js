@@ -396,8 +396,8 @@ var levels = {
 	// Datos de nivel
 	data:[
 	 {   // Primer nivel 
-		foreground:'desert-foreground',
-		background:'clouds-background',
+		foreground:'back_decor1',
+		background:'battleground1',
 		entities:[
 			{type:"ground", name:"dirt", x:500,y:440,width:1000,height:20,isStatic:true},
 			{type:"ground", name:"wood", x:185,y:390,width:30,height:80,isStatic:true},
@@ -415,8 +415,86 @@ var levels = {
 		]
 	 },
 		{   // Segundo nivel
-			foreground:'desert-foreground',
-			background:'clouds-background',
+			foreground:'back_decor2',
+			background:'battleground2',
+			entities:[
+				{type:"ground", name:"dirt", x:500,y:440,width:1000,height:20,isStatic:true},
+				{type:"ground", name:"wood", x:185,y:390,width:30,height:80,isStatic:true},
+	
+				{type:"block", name:"wood", x:820,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:720,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:620,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"glass", x:670,y:317.5,width:100,height:25},
+				{type:"block", name:"glass", x:770,y:317.5,width:100,height:25},				
+
+				{type:"block", name:"glass", x:670,y:255,angle:90,width:100,height:25},
+				{type:"block", name:"glass", x:770,y:255,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:720,y:192.5,width:100,height:25},	
+
+				{type:"villain", name:"burger",x:715,y:155,calories:590},
+				{type:"villain", name:"fries",x:670,y:405,calories:420},
+				{type:"villain", name:"sodacan",x:765,y:400,calories:150},
+
+				{type:"hero", name:"strawberry",x:30,y:415},
+				{type:"hero", name:"orange",x:80,y:405},
+				{type:"hero", name:"apple",x:140,y:405},
+			]
+		},
+		{   // Tercer nivel
+			foreground:'back_decor3',
+			background:'battleground3',
+			entities:[
+				{type:"ground", name:"dirt", x:500,y:440,width:1000,height:20,isStatic:true},
+				{type:"ground", name:"wood", x:185,y:390,width:30,height:80,isStatic:true},
+	
+				{type:"block", name:"wood", x:820,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:720,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:620,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"glass", x:670,y:317.5,width:100,height:25},
+				{type:"block", name:"glass", x:770,y:317.5,width:100,height:25},				
+
+				{type:"block", name:"glass", x:670,y:255,angle:90,width:100,height:25},
+				{type:"block", name:"glass", x:770,y:255,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:720,y:192.5,width:100,height:25},	
+
+				{type:"villain", name:"burger",x:715,y:155,calories:590},
+				{type:"villain", name:"fries",x:670,y:405,calories:420},
+				{type:"villain", name:"sodacan",x:765,y:400,calories:150},
+
+				{type:"hero", name:"strawberry",x:30,y:415},
+				{type:"hero", name:"orange",x:80,y:405},
+				{type:"hero", name:"apple",x:140,y:405},
+			]
+		},
+		{   // Cuarto nivel
+			foreground:'back_decor4',
+			background:'battleground4',
+			entities:[
+				{type:"ground", name:"dirt", x:500,y:440,width:1000,height:20,isStatic:true},
+				{type:"ground", name:"wood", x:185,y:390,width:30,height:80,isStatic:true},
+	
+				{type:"block", name:"wood", x:820,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:720,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:620,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"glass", x:670,y:317.5,width:100,height:25},
+				{type:"block", name:"glass", x:770,y:317.5,width:100,height:25},				
+
+				{type:"block", name:"glass", x:670,y:255,angle:90,width:100,height:25},
+				{type:"block", name:"glass", x:770,y:255,angle:90,width:100,height:25},
+				{type:"block", name:"wood", x:720,y:192.5,width:100,height:25},	
+
+				{type:"villain", name:"burger",x:715,y:155,calories:590},
+				{type:"villain", name:"fries",x:670,y:405,calories:420},
+				{type:"villain", name:"sodacan",x:765,y:400,calories:150},
+
+				{type:"hero", name:"strawberry",x:30,y:415},
+				{type:"hero", name:"orange",x:80,y:405},
+				{type:"hero", name:"apple",x:140,y:405},
+			]
+		},
+		{   // Quinto nivel
+			foreground:'back_decor5',
+			background:'battleground5',
 			entities:[
 				{type:"ground", name:"dirt", x:500,y:440,width:1000,height:20,isStatic:true},
 				{type:"ground", name:"wood", x:185,y:390,width:30,height:80,isStatic:true},
