@@ -395,7 +395,21 @@ var game = {
 var levels = {
 	// Datos de nivel
 	data:[
-	 {   // Primer nivel 
+		{   // Nivel introducctorio
+		foreground:'back_decor1',
+		background:'battleground4',
+		entities:[
+			{type:"ground", name:"dirt", x:500,y:440,width:1000,height:20,isStatic:true},
+			{type:"ground", name:"wood", x:185,y:390,width:30,height:80,isStatic:true},
+
+			{type:"block", name:"wood", x:520,y:380,angle:90,width:100,height:25},
+			{type:"block", name:"glass", x:520,y:280,angle:90,width:100,height:25},								
+			{type:"villain", name:"duende",x:520,y:205,calories:590},			
+
+			{type:"hero", name:"GemaRedonda",x:140,y:405},
+		]
+		},
+	 	{   // Primer nivel 
 		foreground:'back_decor1',
 		background:'battleground1',
 		entities:[
@@ -404,40 +418,37 @@ var levels = {
 
 			{type:"block", name:"wood", x:520,y:380,angle:90,width:100,height:25},
 			{type:"block", name:"glass", x:520,y:280,angle:90,width:100,height:25},								
-			{type:"villain", name:"burger",x:520,y:205,calories:590},
+			{type:"villain", name:"duende",x:520,y:205,calories:590},
 
 			{type:"block", name:"wood", x:620,y:380,angle:90,width:100,height:25},
 			{type:"block", name:"glass", x:620,y:280,angle:90,width:100,height:25},								
-			{type:"villain", name:"fries", x:620,y:205,calories:420},				
+			{type:"villain", name:"duende", x:620,y:205,calories:420},				
 
-			{type:"hero", name:"orange",x:80,y:405},
-			{type:"hero", name:"apple",x:140,y:405},
+			{type:"hero", name:"GemaCian",x:80,y:405},
+			{type:"hero", name:"GemaRedonda",x:140,y:405},
 		]
-	 },
+	 	},
 		{   // Segundo nivel
 			foreground:'back_decor2',
 			background:'battleground2',
 			entities:[
 				{type:"ground", name:"dirt", x:500,y:440,width:1000,height:20,isStatic:true},
 				{type:"ground", name:"wood", x:185,y:390,width:30,height:80,isStatic:true},
-	
-				{type:"block", name:"wood", x:820,y:380,angle:90,width:100,height:25},
-				{type:"block", name:"wood", x:720,y:380,angle:90,width:100,height:25},
+
+				{type:"block", name:"wood", x:520,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"glass", x:520,y:280,angle:90,width:100,height:25},								
+				{type:"villain", name:"duende",x:520,y:205,calories:590},
+
+				{type:"block", name:"wood", x:570,y:380,angle:90,width:100,height:25},
+				{type:"block", name:"glass", x:570,y:280,angle:180,width:60,height:25},								
+				{type:"villain", name:"orco",x:570,y:180,calories:590},
+
 				{type:"block", name:"wood", x:620,y:380,angle:90,width:100,height:25},
-				{type:"block", name:"glass", x:670,y:317.5,width:100,height:25},
-				{type:"block", name:"glass", x:770,y:317.5,width:100,height:25},				
+				{type:"block", name:"glass", x:620,y:280,angle:90,width:100,height:25},								
+				{type:"villain", name:"ogro", x:620,y:205,calories:420},				
 
-				{type:"block", name:"glass", x:670,y:255,angle:90,width:100,height:25},
-				{type:"block", name:"glass", x:770,y:255,angle:90,width:100,height:25},
-				{type:"block", name:"wood", x:720,y:192.5,width:100,height:25},	
-
-				{type:"villain", name:"burger",x:715,y:155,calories:590},
-				{type:"villain", name:"fries",x:670,y:405,calories:420},
-				{type:"villain", name:"sodacan",x:765,y:400,calories:150},
-
-				{type:"hero", name:"strawberry",x:30,y:415},
-				{type:"hero", name:"orange",x:80,y:405},
-				{type:"hero", name:"apple",x:140,y:405},
+				{type:"hero", name:"GemaCian",x:80,y:405},
+				{type:"hero", name:"GemaRedonda",x:140,y:405},
 			]
 		},
 		{   // Tercer nivel
@@ -457,13 +468,13 @@ var levels = {
 				{type:"block", name:"glass", x:770,y:255,angle:90,width:100,height:25},
 				{type:"block", name:"wood", x:720,y:192.5,width:100,height:25},	
 
-				{type:"villain", name:"burger",x:715,y:155,calories:590},
-				{type:"villain", name:"fries",x:670,y:405,calories:420},
-				{type:"villain", name:"sodacan",x:765,y:400,calories:150},
+				{type:"villain", name:"duende",x:715,y:155,calories:590},
+				{type:"villain", name:"ogro",x:670,y:405,calories:420},
+				{type:"villain", name:"orco",x:765,y:400,calories:150},
 
-				{type:"hero", name:"strawberry",x:30,y:415},
-				{type:"hero", name:"orange",x:80,y:405},
-				{type:"hero", name:"apple",x:140,y:405},
+				{type:"hero", name:"GemaRedonda",x:30,y:415},
+				{type:"hero", name:"GemaMorada",x:80,y:405},
+				{type:"hero", name:"GemaCian",x:140,y:405},
 			]
 		},
 		{   // Cuarto nivel
@@ -481,43 +492,23 @@ var levels = {
 
 				{type:"block", name:"glass", x:670,y:255,angle:90,width:100,height:25},
 				{type:"block", name:"glass", x:770,y:255,angle:90,width:100,height:25},
-				{type:"block", name:"wood", x:720,y:192.5,width:100,height:25},	
+				{type:"block", name:"wood", x:720,y:192.5,width:100,height:25},
+				
+				{type:"block", name:"wood", x:500,y:255,angle:90,width:100,height:85},
+				{type:"block", name:"wood", x:945,y:255,angle:90,width:100,height:85},	
 
-				{type:"villain", name:"burger",x:715,y:155,calories:590},
-				{type:"villain", name:"fries",x:670,y:405,calories:420},
-				{type:"villain", name:"sodacan",x:765,y:400,calories:150},
+				{type:"villain", name:"orco",x:715,y:155,calories:590},
+				{type:"villain", name:"orco",x:670,y:405,calories:420},
+				{type:"villain", name:"ogro",x:765,y:400,calories:150},
+				{type:"villain", name:"duende",x:570,y:420,calories:150},
+				{type:"villain", name:"duende",x:870,y:420,calories:150},
 
-				{type:"hero", name:"strawberry",x:30,y:415},
-				{type:"hero", name:"orange",x:80,y:405},
-				{type:"hero", name:"apple",x:140,y:405},
+				{type:"hero", name:"GemaCian",x:30,y:415},
+				{type:"hero", name:"GemaMorada",x:80,y:405},
+				{type:"hero", name:"GemaCian",x:140,y:405},
+				{type:"hero", name:"GemaRedonda",x:140,y:405},
 			]
 		},
-		{   // Quinto nivel
-			foreground:'back_decor5',
-			background:'battleground5',
-			entities:[
-				{type:"ground", name:"dirt", x:500,y:440,width:1000,height:20,isStatic:true},
-				{type:"ground", name:"wood", x:185,y:390,width:30,height:80,isStatic:true},
-	
-				{type:"block", name:"wood", x:820,y:380,angle:90,width:100,height:25},
-				{type:"block", name:"wood", x:720,y:380,angle:90,width:100,height:25},
-				{type:"block", name:"wood", x:620,y:380,angle:90,width:100,height:25},
-				{type:"block", name:"glass", x:670,y:317.5,width:100,height:25},
-				{type:"block", name:"glass", x:770,y:317.5,width:100,height:25},				
-
-				{type:"block", name:"glass", x:670,y:255,angle:90,width:100,height:25},
-				{type:"block", name:"glass", x:770,y:255,angle:90,width:100,height:25},
-				{type:"block", name:"wood", x:720,y:192.5,width:100,height:25},	
-
-				{type:"villain", name:"burger",x:715,y:155,calories:590},
-				{type:"villain", name:"fries",x:670,y:405,calories:420},
-				{type:"villain", name:"sodacan",x:765,y:400,calories:150},
-
-				{type:"hero", name:"strawberry",x:30,y:415},
-				{type:"hero", name:"orange",x:80,y:405},
-				{type:"hero", name:"apple",x:140,y:405},
-			]
-		}
 	],
 
 	// Inicializar pantalla de selección de nivel
@@ -525,13 +516,13 @@ var levels = {
 		var html = "";
 		for (var i=0; i < levels.data.length; i++) {
 			var level = levels.data[i];
-			html += '<input type="button" value="'+(i+1)+'">';
+			html += '<input type="button" value="'+(i)+'">';
 		};
 		$('#levelselectscreen').html(html);
 		
 		// Establecer los controladores de eventos de clic de botón para cargar el nivel
 		$('#levelselectscreen input').click(function(){
-			levels.load(this.value-1);
+			levels.load(this.value);
 			$('#levelselectscreen').hide();
 		});
 	},
@@ -589,7 +580,7 @@ var entities = {
 			friction:1.5,
 			restitution:0.2,	
 		},
-		"burger":{
+		"duende":{
 			shape:"circle",
 			fullHealth:40,
 			radius:25,
@@ -597,7 +588,7 @@ var entities = {
 			friction:0.5,
 			restitution:0.4,	
 		},
-		"sodacan":{
+		"ogro":{
 			shape:"rectangle",
 			fullHealth:80,
 			width:40,
@@ -606,34 +597,34 @@ var entities = {
 			friction:0.5,
 			restitution:0.7,	
 		},
-		"fries":{
+		"orco":{
 			shape:"rectangle",
-			fullHealth:50,
+			fullHealth:85,
 			width:40,
 			height:50,
 			density:1,
 			friction:0.5,
 			restitution:0.6,	
 		},
-		"apple":{
+		"GemaRedonda":{
+			shape:"circle",
+			radius:35,
+			density:1.5,
+			friction:1.5,
+			restitution:0.4,	
+		},
+		"GemaCian":{
 			shape:"circle",
 			radius:25,
 			density:1.5,
-			friction:0.5,
+			friction:0.7,
 			restitution:0.4,	
 		},
-		"orange":{
-			shape:"circle",
-			radius:25,
-			density:1.5,
-			friction:0.5,
-			restitution:0.4,	
-		},
-		"strawberry":{
+		"GemaMorada":{
 			shape:"circle",
 			radius:15,
 			density:2.0,
-			friction:0.5,
+			friction:1.5,
 			restitution:0.4,	
 		},
 	},
