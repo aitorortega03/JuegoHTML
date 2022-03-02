@@ -56,7 +56,10 @@ var game = {
 		game.bounceSound = loader.loadSound('audio/bounce');
 		game.breakSound = {
 			"glass":loader.loadSound('audio/glassbreak'),
-			"wood":loader.loadSound('audio/woodbreak')
+			"wood":loader.loadSound('audio/woodbreak'),
+			"duende": loader.loadSound('audio/homero-ouch-f'),
+			"ogro": loader.loadSound('audio/homero-ouch-f'),
+			"orco": loader.loadSound('audio/homero-ouch-f')
 		};
 
 
