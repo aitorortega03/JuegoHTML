@@ -49,9 +49,8 @@ var game = {
 
 		// Cargar todos los efectos de sonido y música de fondo
 	
-		//"Kindergarten" by Gurdonark
-		//http://ccmixter.org/files/gurdonark/26491 is licensed under a Creative Commons license
-		game.backgroundMusic = loader.loadSound('audio/gurdonark-kindergarten');
+		//Banda sonora de El Señor De Los Anillos
+		game.backgroundMusic = loader.loadSound('audio/lord-of-the-rings');
 
 		game.slingshotReleasedSound = loader.loadSound("audio/released");
 		game.bounceSound = loader.loadSound('audio/bounce');
@@ -827,7 +826,7 @@ var loader = {
 		var audio = document.createElement('audio');
 		if (audio.canPlayType) {
 	   		// Actualmente canPlayType() devuelve: "", "maybe" o "probably" 
-	  		mp3Support = "" != audio.canPlayType('audio/mpeg');
+	  		mp3Support = "" != audio.canPlayType('audio/mp3');
 	  		oggSupport = "" != audio.canPlayType('audio/ogg; codecs="vorbis"');
 		} else {
 			// La etiqueta de audio no es soportada
